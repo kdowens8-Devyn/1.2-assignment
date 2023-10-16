@@ -1,41 +1,118 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<!-- 	-------- TO-DO: ADD META TAG AND NAME HERE -------- -->
-		<title>Form Activity Solution File</title>
-		<!-- 	-------- TO-DO: ADD LINK TO CSS HERE -------- -->
-	</head>
 
-	<body>
-		<a href="#main-content" id="skipLink">Skip to main content</a>
-		<header>
-			<h1>Form Activity - GIT414</h1>
-			<nav>
-				<h2 class="sr-only">Site Navigation</h2>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Shop</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-		<div id="particleBackground"></div>
-		<main id="main-content">
-			<article>
-				<h2>Coding Semantic and Accessible Forms!</h2>
-				<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip
-					links for your website. Forms can be a source of frustration for users, whether they specifically need help with
-					accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code
-					this in class, and please ask questions as they arise. Let's make a form!</p>
+<head>
+	<meta charset="utf-8">
+	<!-- 	-------- TO-DO: ADD META TAG AND NAME HERE -------- -->
+	<title>Form Activity Solution File</title>
+	<!-- 	-------- TO-DO: ADD LINK TO CSS HERE -------- -->
+</head>
 
-				<!-- 	-------- TO-DO: ADD FORM HERE -------- -->
-			</article>
-		</main>
-		<footer>
-			<p>Copyright &copy; 2021 - GIT414</p>
-		</footer>
-	</body>
+<body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss
+				skip
+				links for your website. Forms can be a source of frustration for users, whether they specifically need
+				help with
+				accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as
+				we code
+				this in class, and please ask questions as they arise. Let's make a form!</p>
+
+			<!-- 	-------- TO-DO: ADD FORM HERE -------- -->
+			<form>
+				<label id="name">Full Name</label>
+				<input type="text">
+				<label id="first">Email</label>
+				<input type="email">
+				<label id="phone-number">Phone</label>
+				<input type="tel">
+				<fieldset>
+					<legend>Preferred Contact Method</legend>
+					<input type="radio" value="1">
+					<label id="phone">Phone</label>
+					<input type="radio">
+					<label id="email">Email</label>
+				</fieldset>
+				<label id="required">Comments</label>
+				<textarea></textarea>
+				<input type="submit">
+				<label for="last">State</label>
+				<input list="state">
+				<datalist id="state">
+					<option value="alabama">
+					<option value="alaska">
+					<option value="arizona">
+					<option value="arkansas">
+					<option value="california">
+					<option value="colorado">
+					<option value="connecticut">
+					<option value="deleware">
+					<option value="florida">
+					<option value="georgia">
+					<option value="hawaii">
+					<option value="idaho">
+					<option value="illinois">
+					<option value="indiana">
+					<option value="iowa">
+					<option value="kansas">
+					<option value="kentucky">
+					<option value="louisiana">
+					<option value="maine">
+					<option value="maryland">
+					<option value="massachusetts">
+					<option value="michigan">
+					<option value="minnesota">
+					<option value="mississippi">
+					<option value="missouri">
+					<option value="montana">
+					<option value="nebraska">
+					<option value="nevada">
+					<option value="new hampshire">
+					<option value="new jersey">
+					<option value="new mexico">
+					<option value="new york">
+					<option value="north carolina">
+					<option value="north dakota">
+					<option value="ohio">
+					<option value="oklahoma">
+					<option value="oregon">
+					<option value="pennsylvania">
+					<option value="rhode island">
+					<option value="south carolina">
+					<option value="south dakota">
+					<option value="tennessee">
+					<option value="texas">
+					<option value="utah">
+					<option value="vermont">
+					<option value="virginia">
+					<option value="washington">
+					<option value="west virginia">
+					<option value="wisconsin">
+					<option value="wyoming">
+				</datalist>
+			</form>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021 - GIT414</p>
+	</footer>
+</body>
+
 </html>
